@@ -10,7 +10,7 @@ const rules = {};
 
 for (const ruleId of ruleIds) {
     all[ruleId] = 2;
-    rules[ruleId] = require(`../lib/${ruleId}.js`);
+    rules[ruleId] = require(`../lib/rules/${ruleId}.js`);
 }
 
 module.exports = {
